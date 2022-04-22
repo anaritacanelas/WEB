@@ -1,0 +1,151 @@
+body {
+  font-family: sans-serif;
+  font-weight: 500;
+  margin: 10px 20px;
+}
+div#container {
+  border: 1px solid purple;
+  width: 955px;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: left;
+}
+div {
+  text-align: center;
+}
+div#header {
+  border: 2px solid red;
+  width: 950px;
+  height: 30px;
+  text-align: center;
+}
+div#menu {
+  border: 2px solid green;
+  width: 200px;
+  float: left;
+  margin: 10px 0 10px 5px;
+  height: 600px;
+}
+div#contentlogin {
+  border: 2px solid blue;
+  width: 950px;
+  margin: 1px 1px;
+  min-height: 600px;
+  text-align: center;
+}
+div#content {
+  border: 2px solid blue;
+  width: 715px;
+  margin: 10px 0 10px 235px;
+  min-height: 600px;
+  text-align: center;
+}
+div#footer {
+  border: 2px solid red;
+  width: 950px;
+  height: 35px;
+  text-align: center;
+}
+
+button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 10px; /*  button padding*/
+  cursor: default; /*  cursor: pointer;*/
+  border-width: 1px;
+  font-size: 1em; /*  show/hide password size letter*/
+  font-family: inherit; /*  show/hide password font*/
+  border-color: #000;
+}
+/*effect button*/
+button:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+button#toggle-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 300;
+  padding: 0;
+  /* Display at the top right of the password section */
+  position: absolute;
+  top: -4px;
+  right: -2px;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+h1 {
+  border-bottom: 1px solid #ccc;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 90px;
+  padding: 0 0 5px 0; /* space between h1 and lineborder*/
+}
+
+input {
+  border: 1px solid #ccc;
+  font-size: var(--mobile-font-size);
+  padding: 15px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 3px 0;
+}
+
+form section {
+  margin: 0 0 20px 0;
+  position: relative; /* for password toggle positioning */
+}
+
+/* Change styles for submit button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signupbtn {
+    width: 100%;
+  }
+}
+
+.success-icon,
+.failure-icon {
+  right: 0;
+  opacity: 0;
+}
+
+
+.container{
+  display:flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.item{
+  background-color: rgb(183, 207, 239);
+  border: 2px solid rgb(183, 207, 239);
+  height:50px;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 20px;
+  
+}
+input {
+  display:inline-block;
+  align-content:left;
+  width: min-content;
+
+}
+label{
+  display: inline;
+}
+
+.item.perg{
+  font-size: 30px;
+}

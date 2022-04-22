@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Página de Autenticação</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">Anamness</div>
+      <div id="contentlogin">
+        <form id="form_id" name="myForm" action= "index1.html" method="post">
+
+          <br /><br />
+
+          <h1>Autenticação</h1>
+
+          <section>
+            <label for="username">Inserir número de utilizador (SNS,...)</label>
+          
+            <input
+              id="username"
+              name="username"
+              type="text"
+              class="inputText"
+              placeholder="número SNS "
+              autocomplete="username"
+              required
+            />
+          </section>
+
+          <section>
+            <label for="password">Inserir Senha</label>
+            <button id="toggle-password" type="button">Mostrar Senha</button>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              class="inputText"
+              placeholder="Senha"
+              autocomplete="current-password"
+              required
+            />
+         
+          </section>
+          
+          <button
+            id="login-form-submit"
+            type="submit"
+            onclick="myFunction()"
+          >
+            Entrar
+          </button>
+          <button id="cancel" class="cancelbtn" type="reset" value="Reset">
+            Cancelar
+          </button>
+        </form>
+      </div>
+
+      <div id="footer"><p>&#169 2022 Anamness</p>
+      </div>
+    </div>
+    
+  </body>
+
+</html>
